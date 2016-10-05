@@ -1,2 +1,2 @@
 #!/bin/bash
-cd /tmp/ mkdir holberton mv betty -t holberton
+mv tmp/betty /tmp/holberton/betty
