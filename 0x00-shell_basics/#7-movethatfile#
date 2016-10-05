@@ -1,2 +1,0 @@
-#!/bin/bash
-cd /tmp/ cat > betty mkdir holberton mv betty holberton

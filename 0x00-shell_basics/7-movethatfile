@@ -1,2 +1,2 @@
 #!/bin/bash
-cd /tmp/ cat > betty mv betty /tmp/holberton
+cd /tmp/  mv betty /tmp/holberton
