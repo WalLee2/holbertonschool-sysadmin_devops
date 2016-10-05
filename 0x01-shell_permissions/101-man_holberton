@@ -6,8 +6,7 @@
 .RE
 .SH SYNOPSIS
 .RS
-.B holberton 
-[STUDENTNAME]
+holberton [STUDENTNAME]
 .RE
 .SH DESCRIPTION
 .RS
@@ -15,7 +14,8 @@ Holberton School is a project-based alternative to college for the next generati
 .RE
 .SH OPTIONS
 .RS
-holberton does not take any options. However, you can supply studentname.
+.B holberton 
+does not take any options. However, you can supply studentname.
 .RE
 .SH SEE ALSO
 .RS
