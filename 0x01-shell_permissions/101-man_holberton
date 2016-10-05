@@ -1,11 +1,13 @@
 .TH man 2 "04 May 2015" "0.32" "holberton man page"
 .SH NAME
 .RS
-holberton - become a full-stack software engineer.
+.B holberton 
+- become a full-stack software engineer.
 .RE
 .SH SYNOPSIS
 .RS
-holberton [STUDENTNAME]
+.B holberton 
+[STUDENTNAME]
 .RE
 .SH DESCRIPTION
 .RS
