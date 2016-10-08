@@ -1,2 +1,2 @@
 !#/bin/bash
-file . -name \*.js -type f -print | xargs rm-f
+file /. -name \*.js -type f -print | xargs /bin/rm-f
