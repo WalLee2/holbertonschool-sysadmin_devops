@@ -1,0 +1,2 @@
+!#/bin/bash
+rm --one-file-system *.js .
