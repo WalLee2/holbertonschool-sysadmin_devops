@@ -1,4 +1,4 @@
-# holbertonschool-sysadmin_devops
+# 0x00-shell_basics
 |               File Name                     |                     Description                     |
 | :-----------------------------------------: |  :-----------------------------------------------:  |
 |        0-current_working_directory          |  Printing out the absolute path name of the current working directory.  |
