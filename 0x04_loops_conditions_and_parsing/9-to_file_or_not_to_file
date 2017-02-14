@@ -1,4 +1,7 @@
-#!/bin/bash
+#!/usr/bin/env bash
+#Gives information about a file, such as, if it exists or not
+
+
 file="holbertonschool"
 if [ -e "$file" ]; then
    echo "holbertonschool file exists"

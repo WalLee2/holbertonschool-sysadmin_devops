@@ -1,4 +1,7 @@
-#!/bin/bash
+#!/usr/bin/env bash
+# Prints Holberton School 10 times to stdout
+
+
 i=0
 until ((i > 9))
       do

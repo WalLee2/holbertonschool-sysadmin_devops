@@ -1,4 +1,6 @@
 #!/bin/bash
+#Prints "Hi" on the 9th iteration and "Holberton School" on all other iterations
+
 i=0
 while ((i < 10))
       do

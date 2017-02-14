@@ -1,4 +1,7 @@
-#!/bin/bash
+#!/usr/bin/env bash
+#Displays time for 12 hours and 59 minutes.
+
+
 i=0
 while ((i < 13)); do
       echo "Hour: $i"

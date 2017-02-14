@@ -1,4 +1,6 @@
-#!/bin/bash
+#!/usr/bin/env bash
+#Prints out Holberton School for every iteration except 4 and 8
+
 i=1
 while ((i <= 10))
       do

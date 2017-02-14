@@ -1,4 +1,7 @@
-#!/bin/bash
+#!/usr/bin/env bash
+#Prints Holberton School 10 times to stdout
+
+
 for ((i =0; i <= 9; i++))
     do
 	echo "Holberton School"
