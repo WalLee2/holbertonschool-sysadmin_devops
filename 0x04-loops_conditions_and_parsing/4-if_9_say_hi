@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 #Prints "Hi" on the 9th iteration and "Holberton School" on all other iterations
 
 i=0
