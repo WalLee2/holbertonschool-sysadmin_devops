@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Show what sockets are listening. Show the PID/name of the owner of the socket
+netstat --listening --program
