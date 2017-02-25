@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#Script that generates an RSA private and public key
+ssh-keygen -P[hello] -f holberton -b 4096 -t rsa
