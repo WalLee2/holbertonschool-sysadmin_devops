@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#Script that uses ssh to connect to a server using a private key.
+ssh -i ~/.ssh/holberton ubuntu@52.86.29.108
