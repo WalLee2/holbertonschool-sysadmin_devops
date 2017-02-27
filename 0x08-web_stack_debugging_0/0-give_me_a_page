@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#command that allows port 0:8080 to connect properly
+/etc/init.d/apache2 start
