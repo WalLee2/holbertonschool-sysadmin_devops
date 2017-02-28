@@ -1,2 +1,3 @@
 #name of my domain_name
 sanfranciscoalias.tech
+sudo service nginx restart
