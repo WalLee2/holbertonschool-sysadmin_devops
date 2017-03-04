@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # Configure a new ubuntu machine to have Nginx and have a custom HTTP header forthe host name of the server
 # shellcheck disable=SC2154
-sudo apt-get -y update
-sudo apt-get install nginx
+sudo apt-get update
+sudo apt-get install -y nginx
 sudo service nginx start
-sudo sed -i '20i\           add_header X-Served-By: $HOSTNAME;' /etc/nginx/nginx.conf;
+sudo sed -i "20i\           add_header X-Served-By: $HOSTNAME ;" /etc/nginx/sites-enabled/default;
 sudo service nginx restart
