@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 # Configure a new ubuntu machine to have Nginx and have a custom HTTP header forthe host name of the server
-# shellcheck disable=SC2154
 sudo apt-get update
 sudo apt-get install -y nginx
 sudo service nginx start
