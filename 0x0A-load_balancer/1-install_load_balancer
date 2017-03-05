@@ -1,18 +1,16 @@
 #!/usr/bin/env bash
 #Script to install and configure HAProxy on load balancer server
-#Downloading Haproxy
 sudo apt-get update
 sudo apt-get install -y haproxy
 
-echo ENABLED=1 | sudo tee /etc/default/haproxy
+#Enable init script
+sudo sed -i 's/ENABLED=0/ENABLED=1/' /etc/default/haproxy
 
-#Find path to the config file
 cfg=/etc/haproxy/haproxy.cfg
-
-#make a copy
+#Create backup file
 sudo cp "$cfg" "$cfg.copy"
-
-#modify the config file
-appending="\nlisten appname\nbind 0.0.0.0:80\n\tmode http\n\tstats enable\n\tbalance roundrobin\n\toption httpclose\n\toption forwardfor\n\tserver 102-web-01 52.86.29.108\n\tserver 102-web-02 54.227.34.170\n"
-sudo sed -i -e "$a\ $appending" $cfg
+#Insert desired configurations
+sudo sed -i '$a\\nlisten appname 0.0.0.0:80\n\tmode http\n\tstats enable' $cfg
+sudo sed -i '$a\\tbalance roundrobin\n\toption httpclose\n\toption forwardfor' $cfg
+sudo sed -i '$a\\tserver 102-web-01 52.86.29.108:80\n\tserver 102-web-02 54.227.34.170:80' $cfg
 sudo service haproxy start
