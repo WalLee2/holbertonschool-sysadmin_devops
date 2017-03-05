@@ -15,4 +15,4 @@ sudo cp "$cfg" "$cfg.copy"
 #modify the config file
 appending="\nlisten appname 0.0.0.0:80\n\tbalance roundrobin\n\tserver 102-web-01 52.86.29.108:80 check\n\tserver 102-02 54.227.34.170:80 check\n"
 sudo sed -i -e "37a\ $appending" $cfg
-sudo sed service haproxy start
+sudo service haproxy start
