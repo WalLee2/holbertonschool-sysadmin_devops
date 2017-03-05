@@ -13,6 +13,6 @@ cfg=/etc/haproxy/haproxy.cfg
 sudo cp "$cfg" "$cfg.copy"
 
 #modify the config file
-appending="\nlisten appname 0.0.0.0:80\n\tmode http\n\tbalance roundrobin\n\toption httpclose\n\toption forwardfor\n\tserver 102-web-01 52.86.29.108:80 check\n\tserver 102-web-02 54.227.34.170:80 check\n"
+appending="\nlisten appname 0.0.0.0:80\n\tmode http\n\tstats enable\n\tbalance roundrobin\n\toption httpclose\n\toption forwardfor\n\tserver 102-web-01 52.86.29.108:80 check\n\tserver 102-web-02 54.227.34.170:80 check\n"
 sudo sed -i -e "$a\ $appending" $cfg
 sudo service haproxy start
