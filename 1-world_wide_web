@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# Configure domain zone so that the subdomain www points to your load-balancer IP
+# Bash script that displays information about subdomains
+# shellcheck disable=SC2086
+
+function printing() {
+    usr_in=$(dig "$2"."$1" | grep -A1 'ANSWER SECTION:' | tail -1)
+    read rec_type <<< $(awk -F' ' '{printf "%s", $4}' <<< "$usr_in")
+    read ip_addr <<< $(awk -F' ' '{printf "%s", $5}' <<< "$usr_in")
+    echo "The subdomain $2 is a $rec_type record and points to $ip_addr"
+}
+if [ -z "$2" ]; then
+    for s_domain in "www" "lb-01" "web-01" "web-02"
+    do
+	printing "$1" "$s_domain"
+    done
+else
+    printing "$1" "$2"
+fi
