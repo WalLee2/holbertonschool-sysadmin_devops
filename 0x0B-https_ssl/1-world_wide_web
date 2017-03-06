@@ -5,8 +5,8 @@
 
 function printing() {
     usr_in="$(dig "$2" . "$1" | grep -A1 'ANSWER SECTION:' | tail -1)"
-    read rec_type <<< "$(awk -F' ' '{printf "%s", $4}' <<< "$usr_in")"
-    read ip_addr <<< "$(awk -F' ' '{printf %s, $5}' <<< $usr_in)"
+    read rec_type <<< "$(awk -F' ' '{print $4}' <<< $usr_in)"
+    read ip_addr <<< "$(awk -F' ' '{print $5}' <<< $usr_in)"
     echo "The subdomain $2 is a $rec_type record and points to $ip_addr"
 }
 if [ -z "$2" ]; then
