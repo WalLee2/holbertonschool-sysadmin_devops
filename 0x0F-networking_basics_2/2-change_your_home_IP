@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Configures an Ubuntu server with the below requirements
+sudo cp /etc/hosts /etc/hosts.backup
+sudo sed -i 's/127.0.0.1 localhost/127.0.0.2' /etc/hosts
+sudo sed -i 'a\8.8.8.8\tfacebook.com' /etc/hosts
