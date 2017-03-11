@@ -2,6 +2,6 @@
 # Changing the user to non root user
 pkill apache2
 sed -i 's/80 default/8080 default/g' /etc/nginx/sites-enabled/default
-chown -R nginx /usr/share/nginx /etc/nginx /var/log/nginx
 chmod 755 /etc/nginx/nginx.conf
+chown -R nginx /usr/share/nginx /etc/nginx /var/log/nginx
 su nginx -c nginx
