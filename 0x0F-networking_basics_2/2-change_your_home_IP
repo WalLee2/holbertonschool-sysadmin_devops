@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Configures an Ubuntu server with the below requirements
-cp /etc/hosts ~/etc/hosts.backup
-sed -i 's/127.0.0.1 localhost/127.0.0.2' ~/etc/hosts.backup
-sed -i '$ a8.8.8.8 facebook.com' ~/etc/hosts.backup
-cp -f ~/etc/hosts.backup /etc/hosts
+cp /etc/hosts ~/hosts.backup
+sed -i 's/127.0.0.1 localhost/127.0.0.2' ~/hosts.backup
+sed -i '$a8.8.8.8 facebook.com' ~/hosts.backup
+cp -f ~/hosts.backup /etc/hosts
