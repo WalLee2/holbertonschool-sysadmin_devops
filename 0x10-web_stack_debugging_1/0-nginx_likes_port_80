@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # Script that configures a port that changes the listening port
-sudo sed -i "s/8080/80/g" /etc/nginx/sites-enabled/default
-sudo service start nginx
+sed -i "s/8080/80/g" /etc/nginx/sites-enabled/default
+service start nginx
