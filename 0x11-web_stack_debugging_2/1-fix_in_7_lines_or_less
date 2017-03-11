@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
-# Short and sweet
-sudo wget https://transfer.sh/5a0Fz/nginx.conf
-sudo sed -i "s/#user www-data/user nginx/g" /etc/nginx/nginx.conf
-sudo chown -R nginx /usr/share/nginx /etc/nginx /var/log/nginx
-sudo chmod 755 /etc/nginx/nginx.conf
-sudo service nginx restart
+# Changing the user to non root user
+pkill apache2
+sed -i 's/80 default/8080 default/g' /etc/nginx/sites-enabled/default
+chmod 755 /etc/nginx/nginx.conf
+sed -i 's/#user www-data/user nginx/g' /etc/nginx/nginx.conf
+chown -R nginx /usr/share/nginx /etc/nginx /var/log/nginx
+su nginx -c 'service nginx start'
