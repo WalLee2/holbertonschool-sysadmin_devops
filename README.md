@@ -1,8 +1,11 @@
 ![Holberton School Logo](https://www.holbertonschool.com/holberton-logo.png)
 
 # holbertonschool-sysadmin_devops
+
 ####This repository consists of projects that manipulate files in the shell.
+
 ####The projects below give the project name and a brief description of the overall goal.
+
 |                  Project Name               |                     Description                     |
 | :-----------------------------------------: |  :-----------------------------------------------:  |
 |        0x00-shell_basics                    |  **Goal:** Introduction to the basics of the shell.  |
