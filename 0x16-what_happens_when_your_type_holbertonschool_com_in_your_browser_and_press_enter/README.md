@@ -1,0 +1,1 @@
+This directory provides a link to my Medium post on what happens when you type holbertonschool.com or www.holbertonschool.com
