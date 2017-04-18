@@ -8,7 +8,7 @@ import sys
 
 if __name__ == "__main__":
     emp_id = sys.argv[1]
-    user = 'https://jsonplaceholder.typicode.com/users/2'
+    user = 'https://jsonplaceholder.typicode.com/users/{}'.format(emp_id)
     usr = requests.get(user).json()
     todo_list = 'https://jsonplaceholder.typicode.com/todos'
     todo = requests.get(todo_list).json()
