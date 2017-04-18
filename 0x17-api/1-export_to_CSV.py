@@ -2,9 +2,9 @@
 """
 Gather data from an API that uses REST API
 """
+import csv
 import requests
 import sys
-import csv
 
 if __name__ == "__main__":
     emp_id = sys.argv[1]
