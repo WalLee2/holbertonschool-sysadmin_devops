@@ -27,4 +27,4 @@ if __name__ == "__main__":
           format(str(usr.get("name")), count, total))
     for i in my_list:
         conv = str(i)
-        print("\t{}".format(conv))
+        print("\t {}".format(conv))
