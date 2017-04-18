@@ -2,10 +2,11 @@
 """
 Gather data from an API that uses REST API
 """
-import requests
-import sys
+
 
 if __name__ == "__main__":
+    import requests
+    import sys
     emp_id = sys.argv[1]
     user = 'https://jsonplaceholder.typicode.com/users/2'
     usr = requests.get(user).json()
