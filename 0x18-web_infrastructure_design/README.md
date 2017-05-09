@@ -1,0 +1,1 @@
+Link to images of a client querying a server with only 1 webserver, code base, and MySQL server. The architecture gets more complex as the pictures progress.
