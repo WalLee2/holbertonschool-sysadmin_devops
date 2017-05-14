@@ -1,3 +1,5 @@
+# upstart script that executes gunicorn that grabs the correct route
+
 description "Gunicorn application server running hbnb"
 
 start on runlevel [2345]
