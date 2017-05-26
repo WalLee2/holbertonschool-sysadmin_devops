@@ -6,6 +6,8 @@ def recurse(subreddit, host_list=[], next_str="0"):
     url = 'https://www.reddit.com/r/{}/hot.json'.format(subreddit)
     if not host_list:
         req = requests.get(url, headers={'User-Agent': 'h_reddit'})
+        if (req.status_code != requests.codes.ok):
+            return (None)
     else:
         if next_str is not None:
             more = {'after': next_str}
