@@ -4,6 +4,7 @@ Subroutine that grabs the number of subscribers
 """
 import requests
 
+
 def number_of_subscribers(subreddit):
     """
     Query API and return the number of subscribers if it exists
