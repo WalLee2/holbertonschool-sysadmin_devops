@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-
 import requests
+
 
 def recurse(subreddit, host_list=[], next_str="0"):
     url = 'https://www.reddit.com/r/{}/hot.json'.format(subreddit)
