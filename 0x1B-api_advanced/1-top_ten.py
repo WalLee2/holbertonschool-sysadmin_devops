@@ -9,4 +9,5 @@ def top_ten(subreddit):
         big_json = req.json()
         for i in range(len(big_json['data']['children'])):
             print(big_json['data']['children'][i]['data']['title'])
-    print(None)
+    else:
+        print(None)
